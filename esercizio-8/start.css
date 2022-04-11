@@ -1,0 +1,25 @@
+@import url(style.css);
+
+body{
+    display: flex;
+}
+
+#yellow{
+    order: 1;
+}
+
+#red{
+    order: 2;
+}
+
+#green{
+    order: 3;
+}
+
+#orange{
+    order: 4;
+}
+
+#blue{
+    order: 5;
+}
