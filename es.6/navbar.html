@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Esercizio Navabar</title>
+    <meta name="description" content="esercizio svolto navbar">
+    <meta name="author" content="francesco cristini">
+
+    <meta property="og:title" content="Esercizio navbar">
+    <meta property="og:description" content="esercizio svolto navbar">
+    <meta property="og:image" content="../assets/css3-favicons/icons8-css3-120.png">
+    <meta property="og:url" content="https://www.***.it">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="icon" href="../assets/css3-favicons/icons8-css3-16.png" type="image/png">
+</head>
+
+<body>
+<header>
+    <!--navbar intera-->
+    <!--logo-->
+    <div class="logo">
+        <strong id="linktitle">NavBar</strong>
+    </div>
+    <nav>
+        <!--hamburger menu-->
+        <div  class="nav-m">
+            <!--home link-->
+            <span class="linknav">
+            <a href="Home" id="linkhome">Home</a>
+            </span>
+            <!--link indefinito-->
+            <span class="linknav">
+            <a href="link" id="linklink">link</a>
+            </span>
+            <!--tag select per menu a discesa-->
+            <span class="linknav">
+            <select id="linkselect">
+                <option value="Dropdown">Dropdown</option>
+                <option value="drop2">drop2</option>
+                <option value="drdr3">drdr3</option>
+            </select>
+            </span>
+            <!--link disabilitato-->
+            <span class="linknav">
+            <a href="disabled" id="linkdisabled">disabled</a>
+            </span>
+            <!--search bar-->
+            <span class="spansearch linknav">
+                <input type="search" name="search" id=""placeholder="cerca" class="searchbar"/>
+                <button type="submit" class="searchbar">Cerca</button>
+            </span>
+        </div>
+    </nav>
+    <!--burger menu-->
+    <nav>
+    <!--burger icon-->
+        <span class="svg-burger">
+            <img src="../assets/css3-favicons/icons8-css3-32.png" alt="birger-svg">
+        </span>
+        <div class="burger-m">
+            <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+                <li>item4</li>
+                <li>item5</li>
+            </ul>
+        </div>
+    </nav>
+
+</header>    
+</body>
+</html>

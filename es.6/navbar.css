@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    display: flex;
+    background-color: #212529;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo{
+    padding-left: 5px;
+}
+nav{
+    background-color: #212529;
+    display: flex;
+    padding: 10px;
+    position: relative;
+}
+
+span{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.nav-m{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.burger-m{
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    background-color: #212529;
+    display: none;
+    padding-top: 42px;
+    right: 0px;
+}
+
+.logo{
+    color: whitesmoke;
+    text-decoration: none;
+    max-width: min-content;
+}
+#linktitle{
+    font-size: 1.2em;
+}
+#linkhome{
+    font-weight: 600;
+}
+#linklink{
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.719) ;
+}
+#linkselect{
+    font-weight: 200;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.534);
+    border: none;
+    font-size: 1.1em;
+}
+option{
+    background-color: #212529;
+    border: none;
+}
+#linkdisabled{
+    pointer-events: none;
+    cursor: default;
+    color: rgba(187, 184, 184, 0.486);
+}
+button{
+    background-color: #212529;
+    border: green solid 1px;
+    color: rgba(255, 255, 255, 0.534);
+}
+
+button:hover{
+    animation: h-change 500ms forwards;
+
+}
+
+@keyframes h-change{
+    0% {background-color: #212529; color: rgba(255, 255, 255, 0.534);}
+    100% {background-color: green; color: white;}
+}
+.searchbar{
+    padding: 0.8em;
+    border-radius: 5px;
+}
+
+.svg-burger{
+    height: 100%;
+    display: none;
+    z-index: 2;
+}
+  /*posizionamento a destra della searchbar*/
+.spansearch{
+    margin: auto;
+    margin-right: 10px;
+    display: flex;
+}
+
+@media screen and (max-width: 769px){
+    nav{
+        display: flex;
+    }
+    .nav-m{
+        display: none;
+    }
+    .svg-burger{
+        visibility: visible;
+        display: flex;
+    }
+
+    .svg-burger:hover ~.burger-m{
+        display: flex;
+        animation: b-slide 500ms forwards;
+    }
+
+    @keyframes b-slide {
+        0%{opacity: 0;}
+        50%{opacity: 0.5;}
+        100%{opacity: 1;}
+    }
+
+    .burger-m:hover{
+        display: flex;
+        z-index: 1;
+    }
+
+    li {
+        text-decoration: none;
+    }
+}
