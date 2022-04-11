@@ -1,0 +1,55 @@
+@import url(style.css);
+
+body{
+    display: grid;
+    grid:
+        "green green green"
+        "yellow red blue"
+        "yellow red blue"
+        "orange orange blue";
+}
+#green{
+    grid-area: green;
+}
+#yellow{
+    grid-area: yellow;
+    display: flex;
+    flex-direction: column;    
+}
+
+    .item-grid{
+        display: grid;
+        grid: 
+            "one two"
+            "three four";
+        height: 100%; 
+    }
+
+    .one{
+        grid-area: one;
+    }
+
+    .two{
+        grid-area: two;
+    }
+
+    .three{
+        grid-area: three;
+    }
+
+    .four{
+        grid-area: four;
+    }
+
+#red{
+    grid-area:red;
+    display: flex;
+    flex-direction: column;
+}
+
+#blue{
+    grid-row: blue;
+}
+#orange{
+    grid-area: orange;
+}
