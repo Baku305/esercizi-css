@@ -20,6 +20,10 @@ nav{
     position: relative;
 }
 
+.burger-nav{
+    display: none;
+}
+
 span{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -96,7 +100,7 @@ button:hover{
     display: none;
     z-index: 2;
 }
-  /*posizionamento a destra della searchbar*/
+
 .spansearch{
     margin: auto;
     margin-right: 10px;
@@ -104,7 +108,7 @@ button:hover{
 }
 
 @media screen and (max-width: 769px){
-    nav{
+    .burger-nav{
         display: flex;
     }
     .nav-m{
