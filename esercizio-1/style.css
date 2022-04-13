@@ -81,7 +81,7 @@ div[class$=-ball]{
 @keyframes third-ball-change{
     0%{transform: translate(0%) : scale(1);border-left:80px solid transparent;border-right:80px solid transparent;border-top:80px solid var(--first-ball-color);}
     50%{transform: translate(0%,25%) scale(1.2);border-left:60px solid transparent;border-right:60px solid transparent;border-top:40px solid var(--second-ball-color);}
-    100%{transform: translate(0%,50%%) : scale(1.5);border-left:50px solid transparent;border-right:50px solid transparent;border-top:20px solid var(--third-ball-color);}
+    100%{transform: translate(0%,50%%) : scale(1.5);border-left:50px solid transparent;border-right:50px solid transparent;border-top:10px solid var(--third-ball-color);}
 }
 50px solid trasparent
 
