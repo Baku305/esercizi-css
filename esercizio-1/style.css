@@ -1,0 +1,87 @@
+:root{
+    --first-bg-color:black;
+    --second-bg-color:grey;
+    --third-bg-color:white;
+    --first-ball-color:rgb(0, 0, 0);
+    --second-ball-color:rgb(128, 0, 0);
+    --third-ball-color:rgb(255, 0, 0);
+}
+
+
+body {
+    background-color: var(--first-bg-color);
+    animation: change 800ms alternate infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+div[class$=-ball]{
+    position: absolute;
+}
+
+.ball-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: var(--third-bg-color);
+    border-radius: 50px;
+    animation: ball-change 800ms alternate infinite;
+    transform-origin: left;
+    
+}
+
+.second-ball{
+    width: 100px;
+    height: 100px;
+    background-color: var(--third-bg-color);
+    border-radius: 50px;
+    animation: second-ball-change 800ms alternate infinite;
+    transform-origin: right;
+}
+
+.third-ball{
+    width: 0px;
+    height: 0px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid var(--third-bg-color);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    animation: third-ball-change 800ms alternate infinite;
+    transform-origin: top;
+}
+
+@keyframes change{
+    0%{background-color: var(--first-bg-color);}
+    50%{background-color: var(--second-bg-color);}
+    100%{background-color: var(--third-bg-color);}
+}
+
+@keyframes ball-change{
+    0%{transform: translate(0%) : scale(1);background-color: var(--first-ball-color);border-bottom-left-radius:50%}
+    50%{transform: translate(35%, -60%) scale(1.2);background-color: var(--second-ball-color);border-bottom-left-radius:50%}
+    100%{transform: translate(90%, -60%) : scale(1.5);background-color: var(--third-ball-color);border-bottom-left-radius:50%}
+}
+
+@keyframes second-ball-change{
+    0%{transform: translate(0%) : scale(1);background-color: var(--first-ball-color);border-bottom-right-radius:50%}
+    50%{transform: translate(-35%, -60%) scale(1.2);background-color: var(--second-ball-color);border-bottom-right-radius:0%}
+    100%{transform: translate(-90%, -60%) : scale(1.5);background-color: var(--third-ball-color);border-bottom-right-radius:50%}
+}
+
+@keyframes third-ball-change{
+    0%{transform: translate(0%) : scale(1);border-left:80px solid transparent;border-right:80px solid transparent;border-top:80px solid var(--first-ball-color);}
+    50%{transform: translate(0%,25%) scale(1.2);border-left:60px solid transparent;border-right:60px solid transparent;border-top:40px solid var(--second-ball-color);}
+    100%{transform: translate(0%,50%%) : scale(1.5);border-left:50px solid transparent;border-right:50px solid transparent;border-top:20px solid var(--third-ball-color);}
+}
+50px solid trasparent
+
