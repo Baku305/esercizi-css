@@ -38,6 +38,7 @@ div[class$=-ball]{
     justify-content: center;
     align-items: center;
 }
+/* figure al centro in posizione assoluta */
 .ball {
     width: 100px;
     height: 100px;
@@ -68,29 +69,29 @@ div[class$=-ball]{
     animation: third-ball-change 800ms alternate infinite;
     transform-origin: top;
 }
-
+/* cambio colore dello sfondo */
 @keyframes change{
     0%{background-color: var(--first-bg-color);}
     50%{background-color: var(--second-bg-color);}
     100%{background-color: var(--third-bg-color);}
 }
-
+/* animazione prima palla cambio colore,  traslazione, border radius */
 @keyframes ball-change{
     0%{ transform: var(--first-transform) ;background-color: var(--first-ball-color);border-bottom-left-radius:50%}
     50%{transform: translate(35%, -60%) scale(1.2);background-color: var(--second-ball-color);border-bottom-left-radius:0%}
     100%{transform: translate(90%, -60%) : scale(1.5);background-color: var(--third-ball-color);border-bottom-left-radius:50%}
 }
-
+/* animazione senconda palla cambio colore, translaione, border radius */
 @keyframes second-ball-change{
     0%{transform: var(--first-transform) ;background-color: var(--first-ball-color);border-bottom-right-radius:50%}
     50%{transform: translate(-35%, -60%) scale(1.2);background-color: var(--second-ball-color);border-bottom-right-radius:0%}
     100%{transform: translate(-90%, -60%) : scale(1.5);background-color: var(--third-ball-color);border-bottom-right-radius:50%}
 }
-
+/* animazione triangolo transalzione, bordo sinistro, destro e top */
 @keyframes third-ball-change{
     0%{transform: var(--first-transform) ;border-left:80px solid transparent;border-right:80px solid transparent;border-top:80px solid var(--first-ball-color);}
     50%{transform: translate(0%,25%) scale(1.2);border-left:60px solid transparent;border-right:60px solid transparent;border-top:40px solid var(--second-ball-color);}
     100%{transform: translate(0%,50%) : scale(1.5);border-left:var(--triangle-left);border-right:var(--triangle-right);border-top:10px solid var(--third-ball-color);}
 }
-50px solid trasparent
+
 
