@@ -1,10 +1,9 @@
 body{
     margin: 0;
     padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-a:link{
-    text-decoration: none;
-}
+
     .sidebar{
         width: 200px;
         height: 100vh;
@@ -12,40 +11,68 @@ a:link{
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        background-color: aqua;
+        background-color:grey;
+        border-radius: 1%;
+        overflow: hidden;
     }
         .placeholder-logo{
             width: 100%;
             height: 30%;
-            background-color: aliceblue;
             display: flex;
             justify-content: center;
             align-items: center;
+            border-radius: 1%;
+            box-shadow: 0px 1px 5px #2b2bb2;
+            background-color: grey;
         }
         .link{
             width: 100%;
-            height: 20%;
-            background-color: brown;
+            height:fit-content;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: flex-start;
+            flex-direction: column;
         }
             ul{
                 list-style-type: none;
                 padding-inline-start: 0%;
+                margin: 0;
+                width: 100%;
             }
                 ul li{
-                    padding: 10%;
+                    width: 100%;
+                    margin-block: 1%;
+                    padding-top: 5%;
+                    padding-bottom: 5%;
+                    box-shadow: 0px 1px 5px #2b2bb2;
+                    border-radius: 5%;
+                    transition: 300ms;
                 }
+                ul li:hover{
+                    background-color: #2b2bb2;
+                }
+                    ul li a {
+                        width: fit-content;
+                        color: #2b2b2b;
+                        transition: 300ms;
+                    }
+                    a:link{
+                        text-decoration: none;
+                    }
+                    a:hover{
+                        color: #2b2bb2;
+                    }
         .account-info{
             width: 100%;
             height:30%;
             margin-top: auto;
-            background-color: rgb(182, 27, 27);
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             align-items: center;
+            border-radius: 1%;
+            box-shadow: 0px -1px 5px #2b2bb2;  
+            background-color: grey;
         }
             .avatar{
                 margin-bottom: 10%;
@@ -54,6 +81,7 @@ a:link{
                 object-fit: fill;
                 border-radius: 5%;
                 overflow: hidden;
+                box-shadow: 0px 5px 10px white;
             }
                 .avatar img{
                     height: 100%;
@@ -61,5 +89,5 @@ a:link{
                 }
             .user-name{
                 margin-bottom: 10%;
-                font-size: 1.5rem;
+                font-size: 200%;
             }
