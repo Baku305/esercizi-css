@@ -22,7 +22,7 @@ body{
             justify-content: center;
             align-items: center;
             border-radius: 1%;
-            box-shadow: 0px 1px 5px #2b2bb2;
+            box-shadow: 0px 1px 5px #8d6c9f;
             background-color: grey;
         }
         .link{
@@ -44,12 +44,12 @@ body{
                     margin-block: 1%;
                     padding-top: 5%;
                     padding-bottom: 5%;
-                    box-shadow: 0px 1px 5px #2b2bb2;
+                    box-shadow: 0px 1px 5px #8d6c9f;
                     border-radius: 5%;
                     transition: 300ms;
                 }
                 ul li:hover{
-                    background-color: #2b2bb2;
+                    background-color: #8d6c9f;
                 }
                     ul li a {
                         width: fit-content;
@@ -71,7 +71,7 @@ body{
             justify-content: flex-end;
             align-items: center;
             border-radius: 1%;
-            box-shadow: 0px -1px 5px #2b2bb2;  
+            box-shadow: 0px -1px 5px #8d6c9f;  
             background-color: grey;
         }
             .avatar{
@@ -81,7 +81,7 @@ body{
                 object-fit: cover;
                 border-radius: 5%;
                 overflow: hidden;
-                box-shadow: 0px 5px 10px white;
+                box-shadow: 0px 5px 10px #8d6c9f;
             }
                 .avatar img{
                     height: 100%;
