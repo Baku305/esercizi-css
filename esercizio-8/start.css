@@ -3,7 +3,9 @@
 body{
     display: flex;
 }
+section{
 
+}
 #yellow{
     order: 1;
 }
@@ -18,6 +20,7 @@ body{
 
 #orange{
     order: 4;
+    width: 100%;
 }
 
 #blue{
