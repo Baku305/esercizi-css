@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizio Card</title>
+
+    <meta name="authore" content="Francesco Cristini" />
+    <meta name="description" content="Esercizio svolto sulla copia di una card Html senza uso di CSS" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <meta property="og:title" content="Esercizio Card" />
+    <meta property="og:author" content="Francesco Cristini" />
+    <meta property="og:description" content="Esercizio svolto sulla copia di una card Html senza uso di CSS" />
+    <meta property="og:image" content="assets/***" />
+    <meta property="og:link" content="https://www.***.it" />
+
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        section{
+            display: flex;
+            object-fit: contain;
+            align-items: center;
+        }
+            div{
+                margin: 0;
+                padding: 0;
+            }
+        
+        a:link{
+            text-decoration: none;
+        }
+
+            hr{
+                margin: 0;
+            }
+            div.card{
+                width: 300px;
+                min-width: 300px;
+                margin: 3%;
+                border-radius: 5px;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                background-color: whitesmoke; 
+            }
+            div.card:hover {
+                transition: 500ms;
+                transform: scale(1.1);
+            }
+            div.card:hover .sezionelink{
+                display: block;
+            }
+
+                div.sezione{
+                    padding: 5px;
+                    font-size: 80%;
+                }
+
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            box-shadow: 0 8px 4px 0 rgba(0,0,0,0.2);
+        }
+        .sezionelink{
+            display: none;
+        }
+
+        .sezionelink span a{
+            color: rgb(0, 71, 15);
+        }
+        .sezionelink span a:hover{
+            color: rgb(2, 196, 2);
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <!--contenitore della card intera-->
+            <div class="card">
+                <!--sezione con l'immagine-->
+                <div class="sezione">
+                        <img src="../assets/panda.jpg" alt="Un bel panda che mangia" />
+                </div>
+                <!--sezione con titolo e descrizione della card-->
+                <div class="sezione">
+                    <h2>Il panda gigante</h2>
+                    <p>
+                        Quando pensi a un <span><strong>panda gigante</strong></span>, la prima caratteristica che ti viene
+                        in mente sarà probabilmente la
+                        sua tipica <strong><em>pelliccia</em></strong>, che come avrai visto in molte foto alterna ampie
+                        zone <strong>bianche</strong>, come
+                        la <strong>coda</strong>,
+                        al <strong>nero</strong> che circonda gli <strong>occhi </strong> e ricopre
+                        <strong>orecchie</strong> , <strong>spalle</strong> , <strong>braccia</strong> e <strong>gambe</strong>
+                        ...
+                    </p>
+                </div>
+                <!--sezione primo oggetto-->
+                <div class="sezione sezionelink">
+                    <Em>Dove vive</Em> : <strong><span>Cina</span></strong>
+                </div>
+                <!--sezione secondo oggetto-->
+                <div class="sezione sezionelink">
+                    <em>Cosa mangia</em> : <strong><span>Foglie e ramoscelli</span></strong>
+                </div>
+                <!--sezione terzo oggetto-->
+                <div class="sezione sezionelink">
+                    <em>Status</em> : <strong><span>A rischio di estinzione</span></strong>
+                </div>
+                <!--sezione quarto link-->
+                <div class="sezione sezionelink">
+                    <span><a href="card.html">Card</a></span>
+                    <span><a href="form.html">Iscrizione</a></span>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
