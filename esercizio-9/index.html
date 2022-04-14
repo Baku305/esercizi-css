@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2? family= Poppins:ital,wght@0,400;1,200 & display=swap"
-        rel="stylesheet">
-</head>
+    <head>
+        <!--meta tag caratteri, compatibilità-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--meta tag titolo descrizione autore-->
+        <title>Esercizio n.9</title>
+        <meta name="description" content="esercizio svolto n.9" />
+        <meta name="author" content="francesco cristini" />
+        <!--open graph-->
+        <meta property="og:title" content="Esercizio n.9" />
+        <meta property="og:description" content="esercizio svolto n.9" />
+        <meta property="og:image" content="../assets/css3-favicons/icons8-css3-120.png" />
+        <meta property="og:url" content="https://www.***.it" />
+        <meta property="og:type" content="website" />
+        <!--link esterni-->
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="../assets/css3-favicons/icons8-css3-16.png" type="image/png" />
+    </head>
 
 <body>
+    <!-- sezione contenitore -->
     <section class="card-section">
+        <!-- prima card -->
         <div class="card">
+            <!-- header con logo, account info e option button -->
             <div class="card-header">
+                <!-- logo -->
                 <div class="logo">
                     <a href="#">
                     </a>
                 </div>
+                <!-- account e data -->
                 <div class="account-data-container">
                     <div class="account">
                         <h3>
@@ -33,6 +46,7 @@
                         </p>
                     </div>
                 </div>
+                <!-- option button -->
                 <div class="option-container">
                     <div class="dot">
                         <div class="dot-share dot-hide">
@@ -50,25 +64,28 @@
                     </div>
                 </div>
             </div>
+            <!-- immagine -->
             <div class="card-main">
                 <div class="image">
-                    <img src="../assets/beagle.png" alt="beagle">
+                    <img src="../assets/beagle.png" alt="beagle" />
                 </div>
             </div>
+            <!-- footer con bottoni like e comment -->
             <div class="card-footer">
                 <div class="like-button-container">
                     <div class="like-button">
                         <div class="heart-red">
-                            <img src="../assets/heart-red.svg" alt="love-actived">
+                            <img src="../assets/heart-red.svg" alt="love-actived" />
                         </div>
                         <div>
-                            <img src="../assets/heart.svg" alt="love">
+                            <img src="../assets/heart.svg" alt="love" />
                         </div>
                     </div>
                     <div class="comment-button">
-                        <img src="../assets/comment.svg" alt="love">
+                        <img src="../assets/comment.svg" alt="love" />
                     </div>
                 </div>
+                <!-- contenuto del post -->
                 <div class="card-post-container">
                     <p class="card-post">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis suscipit autem adipisci at illo similique, dolores facere explicabo expedita ipsam quidem, error atque blanditiis nemo. Quae modi eaque illum sapiente.
@@ -77,12 +94,17 @@
                 </div>
             </div>
         </div>
+
+        <!-- seconda card -->
         <div class="card">
+            <!-- header con logo, account info e option button -->
             <div class="card-header">
+                <!-- logo -->
                 <div class="logo">
                     <a href="#">
                     </a>
                 </div>
+                <!-- account e data -->
                 <div class="account-data-container">
                     <div class="account">
                         <h3>
@@ -95,24 +117,46 @@
                         </p>
                     </div>
                 </div>
+                <!-- option button -->
                 <div class="option-container">
-                    <img src="../assets/dot.svg" alt="option">
+                    <div class="dot">
+                        <div class="dot-share dot-hide">
+                            <img src="../assets/single-dot-share.svg" alt="share" class="opt-share"/>
+                        </div>
+                        <div class="dot-save dot-hide">
+                            <img src="../assets/single-dot-save.svg" alt="share" class=" opt-save"/>
+                        </div>
+                        <div class="dot-config dot-hide">
+                            <img src="../assets/single-dot-config.svg" alt="share" class=" opt-config"/>
+                        </div>
+                        <div class="single-dot">
+                            <img src="../assets/single-dot.svg" alt="" class="opt-dot"/>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- immagine -->
             <div class="card-main">
                 <div class="image">
-                    <img src="../assets/beagle.png" alt="beagle">
+                    <img src="../assets/beagle.png" alt="beagle" />
                 </div>
             </div>
+            <!-- footer con bottoni like e comment -->
             <div class="card-footer">
                 <div class="like-button-container">
                     <div class="like-button">
-                        <img src="../assets/heart.svg" alt="love">
+                        <div class="heart-red">
+                            <img src="../assets/heart-red.svg" alt="love-actived" />
+                        </div>
+                        <div>
+                            <img src="../assets/heart.svg" alt="love" />
+                        </div>
                     </div>
                     <div class="comment-button">
-                        <img src="../assets/comment.svg" alt="love">
+                        <img src="../assets/comment.svg" alt="love" />
                     </div>
                 </div>
+                <!-- contenuto del post -->
                 <div class="card-post-container">
                     <p class="card-post">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis suscipit autem adipisci at illo similique, dolores facere explicabo expedita ipsam quidem, error atque blanditiis nemo. Quae modi eaque illum sapiente.
@@ -121,12 +165,17 @@
                 </div>
             </div>
         </div>
+
+        <!-- terza card -->
         <div class="card">
+            <!-- header con logo, account info e option button -->
             <div class="card-header">
+                <!-- logo -->
                 <div class="logo">
                     <a href="#">
                     </a>
                 </div>
+                <!-- account e data -->
                 <div class="account-data-container">
                     <div class="account">
                         <h3>
@@ -139,24 +188,46 @@
                         </p>
                     </div>
                 </div>
+                <!-- option button -->
                 <div class="option-container">
-                    <img src="../assets/dot.svg" alt="option">
+                    <div class="dot">
+                        <div class="dot-share dot-hide">
+                            <img src="../assets/single-dot-share.svg" alt="share" class="opt-share"/>
+                        </div>
+                        <div class="dot-save dot-hide">
+                            <img src="../assets/single-dot-save.svg" alt="share" class=" opt-save"/>
+                        </div>
+                        <div class="dot-config dot-hide">
+                            <img src="../assets/single-dot-config.svg" alt="share" class=" opt-config"/>
+                        </div>
+                        <div class="single-dot">
+                            <img src="../assets/single-dot.svg" alt="" class="opt-dot"/>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- immagine -->
             <div class="card-main">
                 <div class="image">
-                    <img src="../assets/beagle.png" alt="beagle">
+                    <img src="../assets/beagle.png" alt="beagle" />
                 </div>
             </div>
+            <!-- footer con bottoni like e comment -->
             <div class="card-footer">
                 <div class="like-button-container">
                     <div class="like-button">
-                        <img src="../assets/heart.svg" alt="love">
+                        <div class="heart-red">
+                            <img src="../assets/heart-red.svg" alt="love-actived" />
+                        </div>
+                        <div>
+                            <img src="../assets/heart.svg" alt="love" />
+                        </div>
                     </div>
                     <div class="comment-button">
-                        <img src="../assets/comment.svg" alt="love">
+                        <img src="../assets/comment.svg" alt="love" />
                     </div>
                 </div>
+                <!-- contenuto del post -->
                 <div class="card-post-container">
                     <p class="card-post">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis suscipit autem adipisci at illo similique, dolores facere explicabo expedita ipsam quidem, error atque blanditiis nemo. Quae modi eaque illum sapiente.
@@ -165,6 +236,10 @@
                 </div>
             </div>
         </div>
+
+        
+
+
     </section>
 </body>
 
