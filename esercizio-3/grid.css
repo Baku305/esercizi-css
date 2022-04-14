@@ -24,81 +24,81 @@ span{
     transform-origin: center;
 }
 /* calcolatrice */
-.calc-container{
-    display: grid;
-    grid: 
+    .calc-container{
+        display: grid;
+        grid: 
         "result result result result" 
         "button button button button"
         "num num num same";
-    border-radius: 5px;
-    border: 1px solid black;
-    width: min-content;  
+        border-radius: 5px;
+        border: 1px solid black;
+        width: min-content;  
 }
 /* risultati */
-.calc-result{
-    grid-area: result;
-    display: flex;
-    justify-content: flex-end;
-    background-color: #394348;
-    border: 1px solid black;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
+        .calc-result{
+            grid-area: result;
+            display: flex;
+            justify-content: flex-end;
+            background-color: #394348;
+            border: 1px solid black;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
 
-.calc-result div {
-    display: flex;
-    justify-content: center;
-}
+            .calc-result div {
+                display: flex;
+                justify-content: center;
+            }
 /* bottoni */
-.calc-button{
-    grid-area: button;
-    display: flex;
-    justify-content: space-between;
-    background-color: #cbd7df;
-    border: 1px solid black;
-    
-}
+        .calc-button{
+            grid-area: button;
+            display: flex;
+            justify-content: space-between;
+            background-color: #cbd7df;
+            border: 1px solid black;
+            
+        }
 
-.calc-button div{
-    display: flex;
-    justify-content: center;
-    border: 1px solid black;
-}
+            .calc-button div{
+                display: flex;
+                justify-content: center;
+                border: 1px solid black;
+            }
 /* numeri */
-.calc-num{
-    grid-area: num;
-    display: grid;
-    grid: 
-        "7 8 9"
-        "4 5 6"
-        "1 2 3"
-        "0 . AC";
-        background-color: #ecf0f3;
-        border: 1px solid black;
-}
+        .calc-num{
+            grid-area: num;
+            display: grid;
+            grid: 
+                "7 8 9"
+                "4 5 6"
+                "1 2 3"
+                "0 . AC";
+            background-color: #ecf0f3;
+            border: 1px solid black;
+        }
 
-.calc-num div{
-    display: flex;
-    border: 1px solid black;
-    justify-content: center;
-}
+            .calc-num div{
+                display: flex;
+                border: 1px solid black;
+                justify-content: center;
+            }
 
 /* uguale */
-.calc-same{
-    grid-area: same;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: #ff656e;
-    border-bottom-right-radius: 5px;
-    border: 1px solid black;
+        .calc-same{
+            grid-area: same;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-color: #ff656e;
+            border-bottom-right-radius: 5px;
+            border: 1px solid black;
 
-}
+        }
 
-.calc-same div {
-    display: flex;
-    justify-content: center;
-}
+            .calc-same div {
+                display: flex;
+                justify-content: center;
+            }
 
 /* effetto hover */
 span:hover{
