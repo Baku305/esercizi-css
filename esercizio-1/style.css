@@ -19,7 +19,6 @@
 
 body {
     background-color: var(--first-bg-color);
-    animation: change 800ms alternate infinite;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,12 +68,6 @@ div[class$=-ball]{
     animation: third-ball-change 800ms alternate infinite;
     transform-origin: top;
 }
-/* cambio colore dello sfondo */
-@keyframes change{
-    0%{background-color: var(--first-bg-color);}
-    50%{background-color: var(--second-bg-color);}
-    100%{background-color: var(--third-bg-color);}
-}
 /* animazione prima palla cambio colore,  traslazione, border radius */
 @keyframes ball-change{
     0%{ transform: var(--first-transform) ;background-color: var(--first-ball-color);border-bottom-left-radius:50%}
@@ -89,9 +82,9 @@ div[class$=-ball]{
 }
 /* animazione triangolo transalzione, bordo sinistro, destro e top */
 @keyframes third-ball-change{
-    0%{transform: var(--first-transform) ;border-left:80px solid transparent;border-right:80px solid transparent;border-top:80px solid var(--first-ball-color);}
+    0%{transform: var(--first-transform) ;border-left:90px solid transparent;border-right:90px solid transparent;border-top:80px solid var(--first-ball-color);}
     50%{transform: translate(0%,25%) scale(1.2);border-left:60px solid transparent;border-right:60px solid transparent;border-top:40px solid var(--second-ball-color);}
-    100%{transform: translate(0%,50%) : scale(1.5);border-left:var(--triangle-left);border-right:var(--triangle-right);border-top:10px solid var(--third-ball-color);}
+    100%{transform: translate(0%,50%) : scale(1.5);border-left:var(--triangle-left);border-right:var(--triangle-right);border-top:5px solid var(--third-ball-color);}
 }
 
 
