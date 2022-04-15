@@ -157,7 +157,7 @@ width: 100%;
                         overflow-y: scroll;
                     }
                 /* interazioni con il pulsante option */
-                    div.option-container .dot:hover{
+                    div.option-container .dot:focus{
                         animation: zoom 100ms forwards;
                     }
 
@@ -166,39 +166,43 @@ width: 100%;
                             100%{transform: scale(1.5);}
                         }
 
-                        div.option-container .dot:hover .dot-hide{
-                            display: flex;
-                        }
+                    div.option-container .dot:focus .dot-hide{
+                        display: flex;
+                    }
 
-                        div.option-container .dot:hover div.dot-share{
-                            animation: translate-share 100ms forwards;
-                        }
+                    div.option-container .dot:focus div.dot-share{
+                        animation: translate-share 100ms forwards;
+                    }
 
-                        @keyframes translate-share{
-                            0%{transform: translate(0px);}
-                            100%{transform: translate(-150%);}
-                        }
+                    @keyframes translate-share{
+                        0%{transform: translate(0px);}
+                        100%{transform: translate(-150%);}
+                    }
 
-                        div.option-container .dot:hover div.dot-config{
-                            animation: translate-config 100ms forwards;
-                        }
+                            div.option-container .dot:focus div.dot-hide img[class|=opt]:hover{
+                                transform: scale(1.1);
+                            }
 
-                        @keyframes translate-config{
-                            0%{transform: translate(0px);}
-                            100%{transform: translate(-140%, 135%);}
-                        }
+                    div.option-container .dot:focus div.dot-config{
+                        animation: translate-config 100ms forwards;
+                    }
 
-                        div.option-container .dot:hover div.dot-save{
-                            animation: translate-save 100ms forwards;
-                        }
+                    @keyframes translate-config{
+                        0%{transform: translate(0px);}
+                        100%{transform: translate(-140%, 135%);}
+                    }
 
-                        @keyframes translate-save{
-                            0%{transform: translate(0px);}
-                            100%{transform: translate(0px, 150%);}
-                        }
+                    div.option-container .dot:focus div.dot-save{
+                        animation: translate-save 100ms forwards;
+                    }
+
+                    @keyframes translate-save{
+                        0%{transform: translate(0px);}
+                        100%{transform: translate(0px, 150%);}
+                    }
 
                     /* interazione bottone like */
-                    div.like-button:hover .heart-red{
+                    div.like-button:focus .heart-red{
                         animation: colored 300ms forwards;
                         display: block;
                     }
