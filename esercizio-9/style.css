@@ -166,31 +166,43 @@ width: 100%;
                             100%{transform: scale(1.5);}
                         }
 
-                    div.option-container .dot:focus .dot-hide{
-                        display: flex;
-                    }
+                        div.option-container .dot:focus .dot-hide{
+                            display: flex;
+                        }
 
-                    div.option-container .dot:focus div.dot-share{
-                        animation: translate-share 100ms forwards;
-                    }
+                        div.option-container .dot:focus .dot-hide img[class|=opt]:hover{
+                            transform: scale(1.2);
+                        }
+
+                        div.option-container .dot:focus div.dot-share{
+                            animation: translate-share 100ms forwards;
+                        }
+
 
                     @keyframes translate-share{
                         0%{transform: translate(0px);}
                         100%{transform: translate(-150%);}
                     }
 
-                            div.option-container .dot:focus div.dot-hide img[class|=opt]:hover{
-                                transform: scale(1.1);
-                            }
+                        div.option-container .dot:focus div.dot-config{
+                            animation: translate-config 100ms forwards;
+                        }
+
 
                     div.option-container .dot:focus div.dot-config{
                         animation: translate-config 100ms forwards;
                     }
 
+
                     @keyframes translate-config{
                         0%{transform: translate(0px);}
                         100%{transform: translate(-140%, 135%);}
                     }
+
+                        div.option-container .dot:focus div.dot-save{
+                            animation: translate-save 100ms forwards;
+                        }
+
 
                     div.option-container .dot:focus div.dot-save{
                         animation: translate-save 100ms forwards;
