@@ -8,21 +8,25 @@ section{
 }
 #yellow{
     order: 1;
+    flex: 1;
 }
 
 #red{
     order: 2;
+    flex: 1;
 }
 
 #green{
     order: 3;
+    flex: 1;
 }
 
 #orange{
     order: 4;
-    width: 100%;
+    flex: 2
 }
 
 #blue{
     order: 5;
+    flex: 1;
 }
